@@ -1,0 +1,53 @@
+body{
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+#aboutgrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+
+  }
+  #aboutgrid2 div{
+    padding: 0px 75px 80px 75px;
+    text-align: center;
+    
+  }
+  #aboutgrid2 div img{
+    width: 500px;
+    padding: 10px 0px 20px 0px;
+  }
+  .Aboutcoffee{
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 130px;
+  }
+  #flowerlogo{
+    margin: 100px;
+    padding: 0px 100px 0px 100px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+
+  #aboutslider img{
+    
+  }
+  #Aboutimg1{
+    width: 100%;
+    margin-top: -7px;
+    height: 550px;
+    
+  }
+
+  #testimonials{
+    text-align: center;
+    align-items: center;
+    padding-top: 120px;
+  }  
+
+#aboutslider{
+  width:100% ;
+}

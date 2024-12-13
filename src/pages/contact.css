@@ -1,0 +1,34 @@
+#slider{
+    margin-top:0px;
+}
+#Aboutimg1{
+    width: max-content;
+}
+#contactgrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    font-family: cursive;
+}
+#getintouch h1,p{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#inputbox{
+    text-align: center;
+    padding-top: 50px;
+}
+#inputbox div{
+    padding: 5px;
+}
+#inputbox div input{
+    margin: 10px;
+    max-width: 210px;
+    border-radius: 5px;
+}
+#contactsubmit{
+    max-width: 200px;
+    border-radius: 10px;
+}

@@ -1,0 +1,955 @@
+body {
+    
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Prevent body overflow on mobile screens */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #oncontainer{
+        visibility: hidden;
+    }
+}
+
+
+
+#logo1 {
+    width: 140px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#navcontainer {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar1 {
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin-top: 35px;
+    max-width: 100%;
+}
+
+#slider {
+    display: flex;
+    transform: scaleX(infinite);
+    margin-top: -130px;
+    z-index: -1;
+    width: 1345px;
+    height: auto;
+}
+
+.img1 {
+    width: 100%;
+    height: 660px;
+}
+
+#logo4 {
+    position: absolute;
+    z-index: 0;
+    margin-top: 100px;
+    width: 10%;
+    margin-left: 870px;
+    animation: scrolll 1s;
+}
+
+@keyframes scrolll {
+    0% {
+        margin-top: 250px;
+    }
+    50% {
+        margin-top: 90px;
+    }
+    100% {
+        margin-top: 100px;
+    }
+}
+
+#logocontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#oncontainer {
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    margin-top: -400px;
+    margin-left: 560px;
+    margin-right: 12px;
+    animation: scroll 1s;
+}
+
+@keyframes scroll {
+    0% {
+        margin-top: -300px;
+    }
+    50% {
+        margin-top: -410px;
+    }
+    100% {
+        margin-top: -400px;
+    }
+}
+
+#oncontainer div {
+    padding: 5px;
+}
+
+#coffeemasters {
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btnshophere {
+    width: 200px;
+    height: 50px;
+    background-clip: border-box;
+    background: transparent;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 500;
+    border: 2px solid white;
+}
+
+#homesub {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.hovertable {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 300px;
+}
+
+#table1 {
+    width: 250px;
+    height: 180px;
+    padding: 10px 10px 2px 20px;
+    margin-left: -10px;
+    font-family: 'Courier New', Courier, monospace;
+    visibility: hidden;
+}
+
+#thead1 {
+    padding: 30px;
+}
+
+.tr1 {
+    padding: 100px;
+}
+
+#home:hover #table1 {
+    visibility: visible;
+}
+
+#pagesub {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    z-index: 20;
+    padding: 10px;
+    margin-left: -20px;
+}
+
+#tr2 {
+    padding: 15px;
+}
+
+#table2 {
+    padding: 14px;
+    height: 220px;
+    position: absolute;
+    z-index: 20;
+    visibility: hidden;
+}
+
+/* Media Queries */
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 1200px) {
+    #navcontainer {
+        grid-template-columns: 50% 40% 10%;
+        font-size: medium;
+    }
+    #slider {
+        width: 100%;
+    }
+    .img1 {
+        height: 500px;
+    }
+    #logo4 {
+        margin-left: 700px;
+    }
+}
+
+/* Small screens (e.g., smartphones in landscape) */
+@media (max-width: 768px) {
+    #navcontainer {
+        grid-template-columns: 60% 30% 10%;
+        font-size: small;
+    }
+    #slider {
+        margin-top: -100px;
+    }
+    .img1 {
+        height: 400px;
+    }
+    #logo4 {
+        margin-left: 500px;
+    }
+    #btnshophere {
+        width: 150px;
+        height: 40px;
+        font-size: small;
+    }
+}
+
+/* Extra small screens (e.g., smartphones in portrait) */
+@media (max-width: 480px) {
+    #navcontainer {
+        grid-template-columns: 1fr;
+        font-size: smaller;
+    }
+    #slider {
+        margin-top: -50px;
+        width: 100%;
+    }
+    .img1 {
+        height: 300px;
+    }
+    #logo4 {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    #btnshophere {
+        width: 120px;
+        height: 35px;
+        font-size: smaller;
+    }
+}
+
+
+
+
+
+
+
+#gridlogo4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin: 10px 120px 10px 120px;
+    font-size: 14px;
+    background-color: antiquewhite;
+}
+
+#gridlogo4 div img {
+    padding: 20px;
+}
+
+#gridlogo4 div {
+    padding: 10px;
+}
+
+#gridlogo4 div center h2 {
+    font-weight: 200;
+    margin: 0px;
+}
+
+#gridlogo4 div div {
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 1200px) {
+    #gridlogo4 {
+        grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns */
+        margin: 10px 80px; /* Adjust horizontal margin */
+    }
+}
+
+/* Small screens (e.g., smartphones in landscape) */
+@media (max-width: 768px) {
+    #gridlogo4 {
+        grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+        margin: 10px 40px; /* Further reduce margin */
+        font-size: 12px; /* Adjust font size */
+    }
+
+    #gridlogo4 div img {
+        padding: 15px; /* Reduce padding */
+    }
+}
+
+/* Extra small screens (e.g., smartphones in portrait) */
+@media (max-width: 480px) {
+    #gridlogo4 {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        margin: 10px 20px; /* Minimal horizontal margin */
+        font-size: 10px; /* Smaller font size */
+    }
+
+    #gridlogo4 div img {
+        padding: 10px; /* Further reduce padding */
+    }
+}
+
+#coffeeherald div {
+    text-align: center;
+    font-weight: 200;
+    font-size: larger;
+    margin: 0px 280px 0px 280px;
+}
+
+#coffeeherald div h1 {
+    font-weight: 100;
+}
+
+/* Media Queries */
+
+/* Medium screens (e.g., tablets) */
+@media (max-width: 1200px) {
+    #coffeeherald div {
+        margin: 0px 150px; /* Reduce margins for medium screens */
+    }
+}
+
+/* Small screens (e.g., smartphones in landscape) */
+@media (max-width: 768px) {
+    #coffeeherald div {
+        margin: 0px 50px; /* Further reduce margins */
+        font-size: medium; /* Scale down font size */
+    }
+}
+
+/* Extra small screens (e.g., smartphones in portrait) */
+@media (max-width: 480px) {
+    #coffeeherald div {
+        margin: 0px 20px; /* Minimal margins for small screens */
+        font-size: small; /* Further scale down font size */
+    }
+
+    #coffeeherald div h1 {
+        font-size: 1.5em; /* Adjust heading size for small screens */
+    }
+}
+
+.img1{
+    width:100%;
+    height: 660px;
+  }
+  #logo1997{
+    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height:380px;
+    text-align: center;
+    padding-top: 120px;
+    }
+  
+#numbersgrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px 100px 0px 100px;
+    gap: 40px;
+    padding: 70px 0px 70px 0px;
+    text-align: center;
+    }
+    #numbersgrid center h2{
+    font-weight: 300;
+    font-size: 20px;
+    }
+    #numbersgrid h1{
+    font-family: cursive;
+    color:rgb(148, 131, 131);
+    font-size:50px;
+    font-weight: 100;
+    }
+    #numbersgrid div div{
+    text-align: center;
+    }
+
+    /* Styling for smaller devices */
+@media (max-width: 1200px) {
+    #numbersgrid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
+        margin: 0px 50px; /* Reduce horizontal margins */
+    }
+}
+
+@media (max-width: 768px) {
+    #numbersgrid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+        margin: 0px 20px; /* Further reduce horizontal margins */
+    }
+}
+
+@media (max-width: 480px) {
+    #numbersgrid {
+        grid-template-columns: 1fr; /* Adjust to a single column */
+        margin: 0px 10px; /* Minimal horizontal margin */
+        gap: 20px; /* Reduce the gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #numbersgrid h1 {
+        font-size: 40px; /* Reduce font size on very small screens */
+    }
+}
+/* Default styling for larger screens (desktop/laptop) */
+#gridlogo3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 150px 0px 150px;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+#gridlogo3 div {
+    gap: -10px;
+}
+
+#gridlogo3 div img {
+    width: 310px; /* Set a default image width */
+}
+
+#gridlogo3 div h2,
+#gridlogo3 div h3 {
+    font-weight: 100;
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Media query for tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #gridlogo3 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        margin: 50px 50px; /* Reduce margin for smaller screens */
+    }
+
+    #gridlogo3 div img {
+        width: 250px; /* Resize images for medium screens */
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    #gridlogo3 {
+        grid-template-columns: 1fr; /* 1 column for mobile devices */
+        margin: 30px 20px; /* Adjust margin for mobile screens */
+    }
+
+    #gridlogo3 div img {
+        width: 200px; /* Reduce image width for mobile */
+    }
+
+    #gridlogo3 div {
+        gap: 5px; /* Adjust gap for mobile */
+    }
+}
+
+/* Media query for extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #gridlogo3 {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+        margin: 20px 10px; /* Adjust margin for very small screens */
+    }
+
+    #gridlogo3 div img {
+        width: 180px; /* Further reduce image size for very small screens */
+    }
+
+    #gridlogo3 div h2,
+    #gridlogo3 div h3 {
+        font-size: 16px; /* Reduce font size for very small screens */
+    }
+}
+
+
+  /* Default styling for larger screens (desktop/laptop) */
+#onlinecontainer {
+    width: 100%;
+}
+
+#ourdi, #onlinecontainer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 40;
+    margin: 20px;
+    text-align: center;
+}
+
+#leaflogo {
+    margin-top: -30px;
+}
+
+#offerpara {
+    width: 45%;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#onlinegrid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    background-color: antiquewhite;
+    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+}
+
+#onlinegrid4 div {
+    text-align: center;
+}
+
+#onlinegrid4 img {
+    width: 250px;
+    padding: 10px;
+}
+
+#onlinegrid4 h2 {
+    font-weight: 200;
+}
+
+#onlinegrid4 div div {
+    text-align: center;
+}
+
+/* Media query for tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #ourdi {
+        font-size: 40px; /* Reduce font size for tablets */
+    }
+
+    #offerpara {
+        width: 60%; /* Adjust width for offer text */
+        font-size: 18px; /* Slightly smaller text for better fit */
+    }
+
+    #onlinegrid4 {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+
+    #onlinegrid4 img {
+        width: 200px; /* Adjust image size for medium screens */
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    #ourdi {
+        font-size: 30px; /* Further reduce font size for mobile devices */
+    }
+
+    #offerpara {
+        width: 80%; /* Adjust the width for the offer text */
+        font-size: 16px; /* Smaller font for better readability */
+    }
+
+    #onlinegrid4 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile devices */
+    }
+
+    #onlinegrid4 img {
+        width: 180px; /* Reduce image size for mobile devices */
+    }
+
+    #onlinegrid4 div {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+/* Media query for extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #ourdi {
+        font-size: 24px; /* Even smaller font for very small screens */
+    }
+
+    #offerpara {
+        width: 90%; /* Use almost full width for offer text */
+        font-size: 14px; /* Smaller font size for extra small screens */
+    }
+
+    #onlinegrid4 {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+
+    #onlinegrid4 img {
+        width: 150px; /* Even smaller image size for very small screens */
+    }
+
+    #onlinegrid4 div {
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Default styling for larger screens (desktop/laptop) */
+#gallery {
+    height: 350px;
+    /* Additional styles can be added here */
+}
+
+#ourdi {
+    font-size: 60px;
+    /* You can add more styles here if needed */
+}
+
+#leaflogo {
+    width: 380px;
+    /* Ensure logo maintains its size on large screens */
+}
+
+#offerpara {
+    font-size: 30px;
+    margin: 20px 10px 0px 10px;
+    /* Additional styling for offer text can go here */
+}
+
+/* Media query for tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #gallery {
+        height: 300px; /* Adjust gallery height for medium-sized screens */
+    }
+
+    #ourdi {
+        font-size: 50px; /* Slightly smaller font size for better readability */
+    }
+
+    #leaflogo {
+        width: 320px; /* Adjust logo size for tablets */
+    }
+
+    #offerpara {
+        font-size: 26px; /* Slightly smaller font size for the offer text */
+        margin: 15px 8px 0px 8px; /* Adjust margins for better spacing */
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    #gallery {
+        height: 250px; /* Reduce gallery height for smaller screens */
+    }
+
+    #ourdi {
+        font-size: 40px; /* Further reduce font size for mobile screens */
+    }
+
+    #leaflogo {
+        width: 250px; /* Reduce logo width on smaller screens */
+    }
+
+    #offerpara {
+        font-size: 22px; /* Reduce font size for the offer text */
+        margin: 10px 5px; /* Adjust margins for better spacing */
+    }
+}
+
+/* Media query for extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #gallery {
+        height: 200px; /* Even smaller height for very small screens */
+    }
+
+    #ourdi {
+        font-size: 30px; /* Even smaller font size for extra small screens */
+    }
+
+    #leaflogo {
+        width: 200px; /* Smaller logo on very small screens */
+    }
+
+    #offerpara {
+        font-size: 18px; /* Adjust the offer text to be smaller */
+        margin: 8px 3px; /* Adjust margins for a better fit on very small screens */
+    }
+}
+
+/* Default styling for larger screens (desktop/laptop) */
+#gallerypics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    justify-items: stretch;
+    gap: 15px;
+    margin-left: 5px;
+}
+
+#gallerypics div img {
+    width: 100%; /* Ensure images are responsive and fill the grid cells */
+}
+
+/* Media query for tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #gallerypics {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium-sized screens */
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    #gallerypics {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile devices */
+        margin-left: 0; /* Remove left margin for better spacing */
+    }
+}
+
+/* Media query for extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #gallerypics {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+}
+
+
+/* Default styling for larger screens (desktop/laptop) */
+#logosgallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns for larger screens */
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    gap: 20px; /* Added gap between images */
+}
+
+#logosgallery div img {
+    width: 100%; /* Ensure images fill grid cells */
+    object-fit: contain; /* Maintain image aspect ratio */
+}
+
+/* Media query for tablets and medium-sized devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #logosgallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    #logosgallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile devices */
+        margin: 50px 0; /* Adjust the margin for mobile screens */
+    }
+}
+
+/* Media query for extra small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    #logosgallery {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+        margin: 30px 0; /* Adjust the margin further for very small screens */
+    }
+}
+
+    #quotes {
+        display: flex;
+        width: 100%;
+        height: 240px;
+        justify-content: space-around;
+        align-items: center;
+        background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #quotes p {
+        font-size: 40px;
+        color: #fff; /* Ensure text is visible over the background */
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    #ctnbtn {
+        height: 60px;
+        width: 220px;
+        font-size: 30px;
+        margin-right: 100px;
+        background: rgb(247, 195, 127);
+        color: rgb(12, 12, 9);
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #ctnbtn:hover {
+        background: rgb(215, 160, 80);
+    }
+    @media (max-width: 767px) {
+        #quotes {
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+    
+        #quotes p {
+            font-size: 24px; /* Smaller font size for mobile */
+            text-align: center;
+            max-width: 90%;
+            margin-bottom: 20px;
+        }
+    
+        #ctnbtn {
+            height: 50px;
+            width: 180px;
+            font-size: 22px;
+            margin: 0; /* Remove margin */
+        }
+    }
+    
+    /* Media query for extra small mobile devices (less than 480px) */
+    @media (max-width: 480px) {
+        #quotes p {
+            font-size: 18px; /* Even smaller font size for very small screens */
+            max-width: 100%;
+        }
+    
+        #ctnbtn {
+            height: 45px;
+            width: 160px;
+            font-size: 18px;
+            margin-top: 10px; /* Add some space on top for the button */
+        }
+    }
+    
+
+
+
+#footer{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-1-img-3.jpg);
+    background-blend-mode: overlay;
+    background-color: rgb(20, 20, 20);
+    
+    background-size: cover;
+    text-align: center;
+    color: antiquewhite;
+    padding:80px 0px 80px 0px;
+    font-size: 20px;
+    }
+    #footer input{
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    border:solid rgb(193, 240, 23) 2px;
+    }
+    #footer button{
+    position: absolute;
+    margin-top: 0px;margin-right: 10px;
+    background-color: aliceblue;
+    height: 56px;
+    width: 60px;
+    border: solid black 1px;
+    border-radius: 0px 10px 10px 0px;
+    }
+    #lastfooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    font-size:10px ;
+    color: antiquewhite;
+    background-color: black;
+    position: sticky;top: 0;
+    z-index: 20;
+    width: 99.7%;
+    }
+    #footernav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    }
+    #footer img{
+        width: 200px;
+    }
+    @media (max-width: 767px) {
+        #footer {
+            padding: 15px;
+        }
+    
+        #footer img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+    
+        #footer h2 {
+            font-size: 1.2em;
+        }
+    
+        #footer p {
+            font-size: 0.9em;
+        }
+    
+        #footer input[type="text"] {
+            width: 80%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    
+        #footer button {
+            width: 80%;
+            margin-top: 10px;
+        }
+    }
+    @media (max-width: 480px) {
+        #footer {
+            text-align: left;
+            padding: 10px;
+        }
+    
+        #footer img {
+            width: 100px;
+        }
+    
+        #footer h2 {
+            font-size: 1.1em;
+        }
+    
+        #footer p {
+            font-size: 0.8em;
+        }
+    
+        #footer input[type="text"] {
+            width: 100%;
+            margin-right: 0;
+        }
+    
+        #footer button {
+            width: 100%;
+        }
+    }
+    
