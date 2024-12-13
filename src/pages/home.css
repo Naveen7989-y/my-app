@@ -1,7 +1,8 @@
 body {
     
     width: 100%;
-    overflow-x: hidden;
+    background-color: rgb(252, 242, 228);
+    
 }
 /* Prevent body overflow on mobile screens */
 @media (max-width: 768px) {
@@ -629,6 +630,7 @@ body {
 
 #leaflogo {
     width: 380px;
+    margin-top: 10px;
     /* Ensure logo maintains its size on large screens */
 }
 
@@ -784,10 +786,11 @@ body {
     }
     
     #quotes p {
-        font-size: 40px;
-        color: #fff; /* Ensure text is visible over the background */
+        font-size: 30px;
+        color: #161515; /* Ensure text is visible over the background */
         max-width: 60%;
         text-align: center;
+        font-weight: 600;
     }
     
     #ctnbtn {
